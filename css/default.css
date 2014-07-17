@@ -1,12 +1,12 @@
 /* General Blueprint Style */
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 @font-face {
-	font-family: 'bpicons';
-	src:url('../fonts/bpicons/bpicons.eot');
-	src:url('../fonts/bpicons/bpicons.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/bpicons/bpicons.woff') format('woff'),
-		url('../fonts/bpicons/bpicons.ttf') format('truetype'),
-		url('../fonts/bpicons/bpicons.svg#bpicons') format('svg');
+	font-family: 'jm_icons';
+	src:url('../fonts/jm_icons/jm_icons.eot');
+	src:url('../fonts/jm_icons/jm_icons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/jm_icons/jm_icons.woff') format('woff'),
+		url('../fonts/jm_icons/jm_icons.ttf') format('truetype'),
+		url('../fonts/jm_icons/jm_icons.svg#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 } /* Made with http://icomoon.io/ */
@@ -127,7 +127,7 @@ a:hover {
 }
 
 .bp-icon:after {
-	font-family: 'bpicons';
+	font-family: 'jm_icons';
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
@@ -152,20 +152,17 @@ a:hover {
 	color: #fff;
 }
 
-.bp-icon-next:after {
-	content: "\e000";
+.icon-mail:after {
+	content: "\em";
 }
-.bp-icon-drop:after {
-	content: "\e001";
+.icon-twitter:after {
+	content: "\et";
 }
-.bp-icon-archive:after {
-	content: "\e002";
+.icon-github:after {
+	content: "\eg";
 }
-.bp-icon-about:after {
-	content: "\e003";
-}
-.bp-icon-prev:after {
-	content: "\e004";
+.icon-linkedin:after {
+	content: "\el";
 }
 
 .main > section:nth-child(even) {

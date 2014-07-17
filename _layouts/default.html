@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Jonathan Morrice - Portfolio</title>
+		<meta name="description" content="Jonathan Morrice - Portfolio" />
+		<meta name="author" content="Jonathan Morrice" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="/css/default.css" />
+		<link rel="stylesheet" type="text/css" href="/css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+
+		{% include header.html %}
+
+			<header class="clearfix">
+				<h1>{{ page.title }}</h1>
+				<nav>
+					<a target="_blank" href="https://de.linkedin.com/in/jmorrice/" class="bp-icon icon-linkedin" data-info="LinkedIn"><span>LinkedIn</span></a>
+					<a target="_blank" href="https://github.com/jmorrice" class="bp-icon icon-github" data-info="GitHub"><span>GitHub</span></a>
+					<a target="_blank" href="https://twitter.com/jonnymorrice" class="bp-icon icon-twitter" data-info="Twitter"><span>Twitter</span></a>
+					<a href="mailto:jonny@morrices.de" class="bp-icon icon-mail" data-info="Mail"><span>Mail</span></a>
+				</nav>
+			</header>	
+			<div class="main">
+				{% if page.content_template %}
+					{% include {{page.content_template}} %}
+				{% endif %}
+			</div>
+		</div>
+		<!-- classie.js by @desandro: https://github.com/desandro/classie -->
+		<script src="js/classie.js"></script>
+		<script src="js/cbpAnimatedHeader.min.js"></script>
+	</body>
+</html>
